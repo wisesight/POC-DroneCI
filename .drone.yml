@@ -1,0 +1,8 @@
+kind: pipeline
+name: pull
+
+steps:
+  - name: pull
+    image: plugins/git
+    commands:
+      - git pull origin main

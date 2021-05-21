@@ -1,17 +1,8 @@
-#kind: pipeline
-#name: pull
-
-#steps:
-#  - name: pull
-#    image: plugins/docker
-#    commands:
-#      - docker login 
-
 kind: pipeline
 name: pull
 
 steps:
   - name: pull
-    image: plugins/git
+    image: plugins/docker
     commands:
-      - git pull origin main
+      - docker login 

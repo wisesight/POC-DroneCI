@@ -5,4 +5,4 @@ steps:
   - name: pull
     image: plugins/docker
     commands:
-      - docker login
+      - docker login 
